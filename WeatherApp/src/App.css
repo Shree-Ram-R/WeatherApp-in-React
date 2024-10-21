@@ -122,6 +122,7 @@ body {
   margin-top: 5px;
 }
 .location{
+  font-size: 30px;
   color: rgb(235, 13, 57);
   animation: col 10s ease infinite;
 }

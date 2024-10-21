@@ -47,6 +47,13 @@ function App() {
         fetchdata();
        
     })
+    const handleSearch=() => {setCity(() => {
+        if(search.trim() === "") alert("Please Enter the City Name")
+        return search.trim() !== "" ? search.toUpperCase() : "CHENNAI"; 
+      });
+        inputRef.current.focus();
+        fetchdata();
+    }
 
     return (
       <>
@@ -67,13 +74,9 @@ function App() {
                 <FaSearch
                 role="button"
                 tabIndex="0"
-                onClick={() => {setCity(() => {
-                    if(search.trim() === "") alert("Please Enter the City Name")
-                    return search.trim() !== "" ? search.toUpperCase() : "CHENNAI"; 
-                  });
-                    inputRef.current.focus();
-                    fetchdata();
-                }}/>
+                onClick={handleSearch}
+                onKeyDown={e => e.key === 'Enter' ? handleSearch():" "}
+                />
                 </div>
             </div>
             <div>
