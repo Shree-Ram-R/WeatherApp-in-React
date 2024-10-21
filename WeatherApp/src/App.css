@@ -52,13 +52,15 @@ body {
   border-radius: 30px;
   border: 2px solid transparent;
   font-size: 18px;
+  text-align: center;
   outline: none;
-  background-color: #f3f4f7;
+  background-color: transparent;
   transition: border 0.3s ease, background-color 0.3s ease;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
 }
+
 
 .cityInput:focus {
   border-color: #5058ce;
@@ -118,15 +120,15 @@ body {
   margin-top: 10px;
 }
 .location{
-  color: rgb(236, 209, 9);
+  color: rgb(235, 13, 57);
   animation: col 10s ease infinite;
 }
  @keyframes col {
-  0% { color: rgb(236, 209, 9);
+  0% { color: rgb(235, 13, 57);
      }
   50% { color: rgb(58, 14, 231)}
   
-    100% { color:rgb(236, 209, 9); }
+    100% { color:rgb(235, 13, 57); }
 } 
 .country{
   font-weight: 400;

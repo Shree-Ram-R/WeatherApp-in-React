@@ -67,7 +67,10 @@ function App() {
                 <FaSearch
                 role="button"
                 tabIndex="0"
-                onClick={() => {setCity(()=>search.toUpperCase())
+                onClick={() => {setCity(() => {
+                    if(search.trim() === "") alert("Please Enter the City Name")
+                    return search.trim() !== "" ? search.toUpperCase() : "CHENNAI"; 
+                  });
                     inputRef.current.focus();
                     fetchdata();
                 }}/>
@@ -75,7 +78,7 @@ function App() {
             </div>
             <div>
                 {isLoading && <p className="load">Loading Please Wait...</p>}
-            {error && <p className="error">{`Error:${error}`}</p>}
+            {!{city}==" "&&error && <p className="error">{`Error:${error}`}</p>}
             {!error && !isLoading && (<Weather 
             icon={icon} 
             temp={temp} 
