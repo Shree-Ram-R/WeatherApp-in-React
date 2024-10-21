@@ -8,7 +8,7 @@
 # Features
 - Users can search for weather conditions of any city in the world.
 - The app displays the current weather conditions, including temperature and weather description.
-- The app utilizes the SheCodes Weather API to fetch weather data.
+- The app utilizes the Open Weather API to fetch weather data.
 
 # Technologies & Tools Used
 - React.js
@@ -33,8 +33,8 @@ To use the app, simply type the name of the city you want to search for in the s
 A live demo of the React Weather App is available at [LINK TO LIVE DEMO](https://react-weather-app-shemmee.netlify.app).
 
 # Credits
-- The weather app was created by [s-shemmee](https://github.com/Shree-Ram-R) as a project.
-- The app uses the SheCodes Weather API to retrieve weather data.
+- The weather app was created by [Shree Ram R](https://github.com/Shree-Ram-R) as a project.
+- The app uses the Open Weather API to retrieve weather data.
 
 # License
 This project is licensed under the MIT license.
