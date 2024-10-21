@@ -19,7 +19,7 @@ function App() {
     const [long,setLong]=useState(0);
     const [humid,setHumid]=useState(0);
     const [wind,setWind]=useState(0);
-    const [error,setError]=useState();
+    const [error,setError]=useState("");
     const [isLoading, setIsLoading] = useState(true);
     const inputRef = useRef();
     useEffect(()=>{
@@ -36,8 +36,9 @@ function App() {
                 setHumid(data.main.humidity)
                 setWind(data.wind.speed)
                 setIcon(`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+                setError(null)
             }catch(error){
-                setError("Location Not FOund,U have entered an invalid City name")
+                setError("Location Not Found,U have entered an invalid City name")
             }
             finally{
                 setIsLoading(false)
