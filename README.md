@@ -1,7 +1,8 @@
 # React Weather App
  This app allows users to search for the weather conditions of any city in the world and provides current weather information. The app fetches weather data using the OpenWeather API.
 
-![image](https://github.com/user-attachments/assets/4acab824-f301-4c99-9957-daeb4c720920)
+![image](https://github.com/user-attachments/assets/b935199f-b680-4c5c-b7eb-fe2116842198)
+
 
 
 # Features
